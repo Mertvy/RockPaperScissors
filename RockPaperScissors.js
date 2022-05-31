@@ -12,3 +12,15 @@ function gameRound(playerSelection, computerSelection) {
     return "You lose! " + computerSelection + " beats " + playerSelection +"!";
 }
 
+function game() {
+    let playerSelection;
+    alert("Let's play rock paper scissors!")
+    for (let i = 0; i < 5; i++) {
+        playerSelection = prompt("Choose your weapon!")
+        alert(gameRound(playerSelection, computerPlay()))
+        
+    }
+}
+
+
+game()
